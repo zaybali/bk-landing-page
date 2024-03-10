@@ -25,6 +25,12 @@
   src: url('./fonts/FlameSans-Regular.woff');
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--primary-bg-color);
 }
@@ -34,10 +40,22 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 1px 1.4px rgba(0, 0, 0, 0.2);
 }
 
 nav svg {
   width: 2rem;
+}
+
+button.register{
+  font-family: "Flame Regular";
+  color: #FFFFFF;
+  border-radius: 50px;
+  background-color: var(--secondary-bg-color);
+  border: none;
+  padding: 0.6rem 1rem;
 }
 
 button.cart {
