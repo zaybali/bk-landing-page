@@ -2,3 +2,49 @@
 
 /* 768px */
 /* 960px */
+
+:root {
+  --primary-bg-color: #F5EBDC;
+  --secondary-bg-color: #D62300;
+  --secondary-color: #502314;
+}
+
+/* Adding flame font */
+@font-face {
+  font-family: 'Flame Bold';
+  src: url('./fonts/Flame-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Flame Regular';
+  src: url('./fonts/Flame-Regular.woff');
+}
+
+@font-face {
+  font-family: 'FlameSans Regular';
+  src: url('./fonts/FlameSans-Regular.woff');
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav svg {
+  width: 2rem;
+}
+
+button.cart {
+  display: none;
+}
+
+/* Hero text */
+h1 {
+  font-family: "Flame Bold";
+}
