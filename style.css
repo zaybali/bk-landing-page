@@ -37,20 +37,36 @@ body {
 
 /* Navbar */
 
+.max-w-xl {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  box-shadow: 0 1px 1.4px rgba(0, 0, 0, 0.2);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1rem;
-  box-shadow: 0 1px 1.4px rgba(0, 0, 0, 0.2);
 }
 
 nav svg {
   width: 2rem;
+  margin-left: 6rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 button.register{
   font-family: "Flame Regular";
+  font-size: 0.75rem;
   color: #FFFFFF;
   border-radius: 50px;
   background-color: var(--secondary-bg-color);
@@ -60,9 +76,25 @@ button.register{
 
 button.cart {
   display: none;
+  font-family: "Flame Regular";
+  font-size: 0.75rem;
+  color: var(--primary-bg-color);
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.6rem 1rem;
 }
 
 /* Hero text */
 h1 {
   font-family: "Flame Bold";
+}
+
+
+/* Media Queries for tablet view */
+
+@media only  screen and (min-width:768px){
+  button.cart {
+    display: inline;
+  }
 }
