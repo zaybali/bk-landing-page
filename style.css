@@ -33,6 +33,7 @@
 
 body {
   background-color: var(--primary-bg-color);
+  overflow-x: hidden;
 }
 
 .max-w-xl {
