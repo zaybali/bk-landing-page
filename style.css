@@ -314,7 +314,8 @@ section.features {
 .cta-buttons-sm {
   display: flex;
   margin: 1rem auto;
-  gap: 1rem;
+  gap: 0.5rem;
+  justify-content: space-around;
 }
 
 .cta .para-sm {
