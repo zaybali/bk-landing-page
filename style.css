@@ -143,6 +143,67 @@ button.order-delivery {
   border: 1px solid var(--secondary-bg-color);
 }
 
+/* Order Features Section */
+
+section.features {
+  padding: 0.6rem 1rem;
+  color: var(--secondary-color);
+}
+
+.order-featured-card {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.feature-img-container {
+  width: 445px;
+}
+
+.feature-img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px
+}
+
+.feature-content {
+  padding: 1rem;
+}
+
+.feature-content h2 {
+  font-family: 'Flame regular';
+  font-size: 1.2rem;
+}
+
+.feature-content p {
+  font-family: 'FlameSans regular';
+  font-size: 0.75rem;
+  padding: 0.75rem 0 0.5rem 0;
+}
+
+.feature-content a {
+  font-family: 'FlameSans regular';
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+}
+
+.feature-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem 1rem 0;
+}
+
+.feature-button button {
+  font-family: 'flame regular';
+  height: 40px;
+  border-radius: 9999px;
+  padding: 0 1rem;
+  color: var(--secondary-bg-color);
+  background-color: transparent;
+  border: 1px solid var(--secondary-bg-color);
+}
+
 /* Media Queries for tablet view */
 
 @media only  screen and (min-width:768px){
