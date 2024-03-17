@@ -293,8 +293,8 @@ section.features {
 
 .cta-content h2 {
   font-family: 'flame bold';
-  font-size: 1.8rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0.5rem;
   align-self: center;
 }
 
@@ -444,6 +444,7 @@ li img {
   }
 
   .cta-content h2 {
+    font-size: 2rem;
     padding: 1rem 1rem 1rem 0;
     align-self: flex-start;
   }
