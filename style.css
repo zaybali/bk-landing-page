@@ -87,6 +87,7 @@ button.cart {
 
 
 /* Hero Section */
+
 section.hero {
   display: flex;
   flex-direction: column;
@@ -142,6 +143,7 @@ button.order-delivery {
   background-color: transparent;
   border: 1px solid var(--secondary-bg-color);
 }
+
 
 /* Order Features Section */
 
@@ -208,6 +210,69 @@ section.features {
   border: 1px solid var(--secondary-bg-color);
 }
 
+
+/* CTA Section */
+
+.cta-bg {
+  background-color: #EBE2D3;
+}
+
+.cta {
+  display: flex;
+  padding: 0.6rem 1rem;
+  color: var(--secondary-color);
+  margin-top: 8rem;
+  flex-wrap: wrap;
+}
+
+.cta-img-container {
+  width: 30%;
+  margin-top: -3rem;
+}
+
+.cta img {
+  width: 100%;
+}
+
+.cta-img-lg {
+  display: none;
+}
+
+.cta-content {
+  display: flex;
+}
+
+.cta-content h2 {
+  font-family: 'flame bold';
+  font-size: 1.8rem;
+  padding: 1rem;
+  align-self: center;
+}
+
+/* .cta-content {
+  display: flex;
+  flex-direction: column;
+} */
+
+.cta-buttons-md, .para-md {
+  display: none;
+}
+
+.cta-buttons-sm {
+  display: flex;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+.cta .para-sm {
+  font-family: 'flameSans regular';
+  font-size: 0.86rem;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
 /* Media Queries for tablet view */
 
 @media only  screen and (min-width:768px){
@@ -261,6 +326,41 @@ section.features {
   .feature-img-container {
     width: 454px;
   }
+
+  /* CTA sections */
+
+  .cta {
+    gap: 3rem;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    max-width: 55%;
+  }
+
+  .cta-content h2 {
+    padding: 1rem 1rem 1rem 0;
+    align-self: flex-start;
+  }
+
+  .cta-buttons-sm, .para-sm {
+    display: none;
+  }
+
+  .cta-buttons-md {
+    display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .para-md {
+    display: block;
+    font-family: 'flameSans regular';
+    font-size: 0.86rem;
+    color: var(--secondary-color);
+    text-align: left;
+    padding: 1rem 0;
+  }
 }
 
 
@@ -308,5 +408,31 @@ section.features {
 
   .feature-img-container img {
     width: 446px;
+  }
+
+  /* CTA section */
+
+  .cta-img-lg {
+    display: block;
+  }
+
+  .cta-img-sm {
+    display: none;
+  }
+
+  .cta-img-container {
+    width: 40%;
+  }
+
+  .cta-content {
+    width: 52%;
+  }
+
+  .cta-content h2 {
+    font-size: 3rem;
+  }
+
+  .cta-buttons-md {
+    max-width: 70%;
   }
 }
